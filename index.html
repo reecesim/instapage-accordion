@@ -1,0 +1,246 @@
+<style>
+	.faq-question-container{
+		    border-top: 1px solid #E3E3E3;
+    		padding: 12px 0;
+	}
+	.faq-arrow-control {
+		transform: rotate(0deg);
+    	background-image: url("data:image/svg+xml,%0A%3Csvg width='250' height='250' viewBox='0 0 250 250' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M69.8959 96.7708C68.9302 97.7345 68.1641 98.8792 67.6414 100.139C67.1187 101.399 66.8496 102.75 66.8496 104.115C66.8496 105.479 67.1187 106.83 67.6414 108.09C68.1641 109.35 68.9302 110.495 69.8959 111.458L117.708 159.271C118.672 160.237 119.817 161.003 121.077 161.525C122.337 162.048 123.688 162.317 125.052 162.317C126.416 162.317 127.767 162.048 129.027 161.525C130.288 161.003 131.432 160.237 132.396 159.271L180.208 111.458C181.173 110.494 181.938 109.349 182.46 108.089C182.982 106.829 183.25 105.478 183.25 104.115C183.25 102.751 182.982 101.4 182.46 100.14C181.938 98.8801 181.173 97.7352 180.208 96.7708C179.244 95.8064 178.099 95.0415 176.839 94.5195C175.579 93.9976 174.229 93.729 172.865 93.729C171.501 93.729 170.15 93.9976 168.89 94.5195C167.63 95.0415 166.485 95.8064 165.521 96.7708L125 137.188L84.5834 96.7708C80.5209 92.7083 73.8542 92.8125 69.8959 96.7708V96.7708Z' fill='black' fill-opacity='0.4'/%3E%3C/svg%3E%0A");
+	    content: "";
+	    padding: 13px;
+	    background-position: center;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    border-radius: 50px;
+	}
+	.faq-open .faq-arrow-control{
+		transform: rotate(180deg);
+	}
+
+	.faq-question-header{
+		background-color: #fff;
+	    padding: 10px 10px 10px 0;
+	    position: relative;
+	    z-index: 500;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	.faq-question-header h5{
+		font-family: Lora;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 22px;
+    	line-height: 36px;
+    	color: #1F1F1F;
+    	text-decoration: none!important;
+         	text-align: left!important;
+	}
+	.faq-question-header h5:hover{
+    	text-decoration: none!important;
+	}
+.faq-toggler{
+text-decoration:none!important;
+}
+	.faq-question-body{
+		font-style: normal;
+    	font-weight: normal;
+    	font-size: 18px;
+    	line-height: 30px;
+    	color: #1F1F1F;
+    	font-family: Source Sans Pro!important;
+		text-align: left;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+      transition:transform 0.3s ease-out;
+      transform: scaleY(0);
+      transform-origin: top;
+	}
+	.show.faq-question-body{
+		max-height: 100%;
+		transform: scaleY(1);
+	}
+	.show.faq-question-body p{
+		padding-bottom:12px;
+	}
+  @media only screen and (max-width: 767px){
+  .faq-question-header h5{
+    	font-size: 18px;
+    	line-height: 32px;
+	}
+	.faq-question-body{
+    	font-size: 16px;
+    	line-height: 28px;
+	}
+  }
+</style>
+
+<div class="faq-section-container">
+	<div class="faq-question-container">
+		<a class="faq-toggler" data-faq-controls="1">
+		<div class="faq-question-header">
+			<h5>What is the duration of the program?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-1" class="faq-question-body">
+			<p>The full program contains 7 months of extensive training followed by our 3-month Career Accelerator, where you start your job search. We offer unlimited career coaching and services until you're hired.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+		<a class="faq-toggler" data-faq-controls="2">
+		<div class="faq-question-header">
+			<h5>How many hours will I need to spend every week?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-2" class="faq-question-body">
+			<p>The program requires a minimum commitment of 15 hours per week.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+
+		<a class="faq-toggler" data-faq-controls="3">
+		<div class="faq-question-header">
+			<h5>Is the program 100% online?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-3" class="faq-question-body">
+			<p>The program is 100% online, including a weekly schedule of live events and hundreds of hours of self-learning with access to the worlds leading training platforms.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+		<a class="faq-toggler" data-faq-controls="4">
+		<div class="faq-question-header">
+			<h5>Do I need to have prior knowledge to apply?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-4" class="faq-question-body">
+			<p>No prior knowledge is necessary to apply. We look for motivation, grit, and aptitude. However, you are expected to have basic computer literacy, high-school level understanding of mathematics, and be comfortable working with numbers.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+
+		<a class="faq-toggler" data-faq-controls="5">
+		<div class="faq-question-header">
+			<h5>Will you help me find a job?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-5" class="faq-question-body">
+			<p>Yes, you will get our unlimited and full support until you're hired, with an entire team working to help you get employed.</p>
+			<p>Our students benefit from 1:1 mentorship, extensive workshops, and active support to improve your resume and LinkedIn profile, activate your network, prepare for interviews, and more.</p>
+			<p>Getting your first job in tech is hard, but if you're willing to put in the work, we'll support you every step of the way.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+
+		<a class="faq-toggler" data-faq-controls="6">
+		<div class="faq-question-header">
+			<h5>What are the terms for Success-Based tuition?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-6" class="faq-question-body">
+			<p>We’ll cover your tuition until you get hired. This means that you'll pay your tuition only after you find a job making more than ₪10,000 a month. Only then, will you pay 10% of your income each month, until you have fully paid the tuition cost of ₪45,000.</p>
+			<p>Five years after you graduate, you will not need to make any additional payments, regardless of how much you already paid. If you didn't find a job earning more than ₪10,000/month you pay ₪0.</p>
+			<p>The total amount you pay for your tuition will be ₪0-45,000, depending on your income. You will not make more than 40 monthly payments, even if you didn't pay the full tuition.</p>
+		</div>
+
+	</div>
+
+	<div class="faq-question-container">
+		<a class="faq-toggler" data-faq-controls="7">
+		<div class="faq-question-header">
+			<h5>What happens if I decide to leave the program?</h5>
+			<span class="faq-arrow-control"></span>
+		</div>
+	</a>
+
+		<div id="faq-body-7" class="faq-question-body">
+			<p>If you decide to leave prior to the start of the program, or during the first month, you will not be charged beyond the registration fee of $250.</p>
+			<p>If you decide to leave the program within the second month, your discounted tuition cost will be 25% of the full tuition of ₪45,000, and if you leave during the third month, you will pay 50% of the full tuition.</p>
+			<p>Even if you decide to drop out of the program, you will still be eligible to pay your tuition in the success-based model, under the same conditions and based on your income.</p>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	let faqItems = document.querySelectorAll(".faq-toggler");
+
+	for (let i=0; i<faqItems.length; i++){
+		faqItems[i].addEventListener("click", toggleFaq, false);
+		console.log("faq id: "+ faqItems[i].dataset.faqControls);
+	}
+
+	let faqSectionElement = document.querySelector(".faq-section-container").parentElement.parentElement.parentElement.parentElement;
+
+	let faqSectionElementParent = faqSectionElement.parentElement;
+
+	function toggleFaq(evt){
+		let faqToToggle = document.getElementById("faq-body-"+evt.currentTarget.dataset.faqControls);
+
+		let targetState = faqToToggle.dataset.currentState;
+		let targetHeader = faqToToggle.parentElement;
+
+		//close all FAQs
+		let allFAQs = document.querySelectorAll(".faq-question-body");
+
+		for (let i = 0; i < allFAQs.length; i++) {
+			//console.log("closing all faqs");
+			if (allFAQs[i].dataset.currentState == "open" && allFAQs[i] != faqToToggle){
+			allFAQs[i].removeAttribute("data-current-state");
+			let currentHeight = faqSectionElement.clientHeight;
+			let newHeight = currentHeight - allFAQs[i].clientHeight;
+			allFAQs[i].classList.remove("show");
+			allFAQs[i].parentElement.classList.remove("faq-open");
+			//console.log("faq "+i+ " is closing");
+			
+			faqSectionElement.style.height = newHeight+"px";
+    		faqSectionElementParent.style.height = newHeight+"px";
+		}
+		}
+
+			if (faqToToggle.dataset.currentState != "open"){
+			faqToToggle.setAttribute("data-current-state", "open");
+			faqToToggle.classList.add("show");
+			targetHeader.classList.add("faq-open");
+			//console.log("faq "+evt.currentTarget.dataset.faqControls + " is opening");
+			let currentHeight = faqSectionElement.clientHeight;
+			let newHeight = currentHeight + faqToToggle.clientHeight;
+			faqSectionElement.style.height = newHeight+"px";
+    		faqSectionElementParent.style.height = newHeight+"px";
+    	}else{
+    		//console.log("closing target faq");
+			faqToToggle.removeAttribute("data-current-state");
+			let currentHeight = faqSectionElement.clientHeight;
+			let newHeight = currentHeight - faqToToggle.clientHeight;
+			faqToToggle.classList.remove("show");
+			faqToToggle.parentElement.classList.remove("faq-open");
+			
+			faqSectionElement.style.height = newHeight+"px";
+    		faqSectionElementParent.style.height = newHeight+"px";
+    	}
+		
+	}
+	</script>
